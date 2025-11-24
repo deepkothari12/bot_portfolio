@@ -94,7 +94,6 @@ from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Generator
-
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
@@ -104,7 +103,6 @@ load_dotenv()
 
 # This is your existing File Search store name
 RESUME_FILE_PATH = "fileSearchStores/710bglrg39xn-w0fpkf78edzn"
-
 
 client = genai.Client()
 
